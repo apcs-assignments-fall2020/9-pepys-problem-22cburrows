@@ -5,26 +5,67 @@ public class MyMain {
     // Returns in the answer as a double corresponding to the percentage
     // For example, 75.5% would be 75.5
     public static double probabilityOneSix() {
-        // REPLACE WITH YOUR CODE HERE
-        return -1.0;
+        double ave = 0;
+        for (int i = 0; i < 10; i++){
+            int probs = 0;
+            for (int j = 0; j < 6; i ++){
+                int num = (int) ((Math.random() * 6) + 1);
+                if (num == 6){
+                    probs += 1;
+                }
+                else{
+
+                }
+            ave = (double) ((ave + (probs/6)) / 2);
+        }
+        }
+        return (ave * 100);
     }
 
     // Calculate the probability of rolling at least two 6's when rolling 
     // twelve dice. Uses 10000 trials.
     public static double probabilityTwoSixes() {
-        // REPLACE WITH YOUR CODE HERE
-        return -1.0;
+        double ave = 0;
+        for (int i = 0; i < 10; i++){
+            int probs = 0;
+            for (int j = 0; j < 12; i ++){
+                int num = (int) ((Math.random() * 6) + 1);
+                if (num == 6){
+                    probs += 1;
+                }
+                else{
+
+                }
+            ave = (double) ((ave + (probs/6)) / 2);
+        }
+        }
+        return (ave * 100);
     }
 
     // Calculate the probability of rolling at least three 6's when rolling 
     // eighteen dice. Uses 10000 trials.
     public static double probabilityThreeSixes() {
-        // REPLACE WITH YOUR CODE HERE
-        return -1.0;
+        double ave = 0;
+        for (int i = 0; i < 10; i++){
+            int probs = 0;
+            for (int j = 0; j < 18; i ++){
+                int num = (int) ((Math.random() * 6) + 1);
+                if (num == 6){
+                    probs += 1;
+                }
+                else{
+
+                }
+            ave = (double) ((ave + (probs/6)) / 2);
+        }
+        }
+        return (ave * 100);
     }
 
 
     public static void main(String[] args) {
-        // YOUR CODE HERE
+        System.out.println(probabilityOneSix());
+        System.out.println(probabilityTwoSixes());
+        System.out.println(probabilityThreeSixes());
     }
 }
